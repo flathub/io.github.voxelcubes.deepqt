@@ -1,4 +1,4 @@
-# Generated with flatpak-pip-generator --runtime=org.freedesktop.Sdk//22.08 --yaml --output pypi-dependencies --requirements-file=requirements.txt
+# Generated with flatpak-pip-generator --runtime=org.freedesktop.Sdk//24.08 --yaml --output pypi-dependencies --requirements-file=requirements.txt
 build-commands: []
 buildsystem: simple
 modules:
@@ -9,23 +9,23 @@ modules:
         --prefix=${FLATPAK_DEST} "deepl" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/71/4c/3db2b8021bd6f2f0ceb0e088d6b2d49147671f25832fb17970e9b583d742/certifi-2022.12.7-py3-none-any.whl
-        sha256: 4ad3232f5e926d6718ec31cfc1fcadfde020920e278684144551c91769c7bc18
+        url: https://files.pythonhosted.org/packages/a5/32/8f6669fc4798494966bf446c8c4a162e0b5d893dff088afddf76414f70e1/certifi-2024.12.14-py3-none-any.whl
+        sha256: 1275f7a45be9464efc1173084eaa30f866fe2e47d389406136d332ed4967ec56
       - type: file
-        url: https://files.pythonhosted.org/packages/cc/f6/21a66e524658bd1dd7b89ac9d1ee8f7823f2d9701a2fbc458ab9ede53c63/charset_normalizer-3.1.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
-        sha256: 75f2568b4189dda1c567339b48cba4ac7384accb9c2a7ed655cd86b04055c795
+        url: https://files.pythonhosted.org/packages/3e/a2/513f6cbe752421f16d969e32f3583762bfd583848b763913ddab8d9bfd4f/charset_normalizer-3.4.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+        sha256: bc2722592d8998c870fa4e290c2eec2c1569b87fe58618e67d38b4665dfa680d
       - type: file
-        url: https://files.pythonhosted.org/packages/90/00/eb918802fbf221456e817768a190c66b09ae607ccaa038c640a009e716e4/deepl-1.14.0-py3-none-any.whl
-        sha256: 7203b495d3356559b433544385d58c50257ad48035fc490730258b76fedd82f6
+        url: https://files.pythonhosted.org/packages/f7/24/48054f6808a5586f7195c2c26fef52b598c0ebf37542ee46dd9da72fe9e1/deepl-1.20.0-py3-none-any.whl
+        sha256: 69f93a26d70bff6e2204a71f2e601c4b826cbad1ff6f0e3065cbf5d17a0662d9
       - type: file
-        url: https://files.pythonhosted.org/packages/fc/34/3030de6f1370931b9dbb4dad48f6ab1015ab1d32447850b9fc94e60097be/idna-3.4-py3-none-any.whl
-        sha256: 90b77e79eaa3eba6de819a0c442c0b4ceefc341a7a2ab77d7562bf49f425c5c2
+        url: https://files.pythonhosted.org/packages/76/c6/c88e154df9c4e1a2a66ccf0005a88dfb2650c1dffb6f5ce603dfbd452ce3/idna-3.10-py3-none-any.whl
+        sha256: 946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3
       - type: file
-        url: https://files.pythonhosted.org/packages/d2/f4/274d1dbe96b41cf4e0efb70cbced278ffd61b5c7bb70338b62af94ccb25b/requests-2.28.2-py3-none-any.whl
-        sha256: 64299f4909223da747622c030b781c0d7811e359c37124b4bd368fb8c6518baa
+        url: https://files.pythonhosted.org/packages/f9/9b/335f9764261e915ed497fcdeb11df5dfd6f7bf257d4a6a2a686d80da4d54/requests-2.32.3-py3-none-any.whl
+        sha256: 70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6
       - type: file
-        url: https://files.pythonhosted.org/packages/7b/f5/890a0baca17a61c1f92f72b81d3c31523c99bec609e60c292ea55b387ae8/urllib3-1.26.15-py2.py3-none-any.whl
-        sha256: aa751d169e23c7479ce47a0cb0da579e3ede798f994f5816a74e4f4500dcea42
+        url: https://files.pythonhosted.org/packages/c8/19/4ec628951a74043532ca2cf5d97b7b14863931476d117c471e8e2b1eb39f/urllib3-2.3.0-py3-none-any.whl
+        sha256: 1cee9ad369867bfdbbb48b7dd50374c0967a0bb7710050facf0dd6911440e3df
   - name: python3-logzero
     buildsystem: simple
     build-commands:
@@ -42,17 +42,17 @@ modules:
         --prefix=${FLATPAK_DEST} "PySide6" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/61/c1/37fabc94f958a03a605755ee1298d9f7d9f5d121f3d1ea2d480f79fc3d6c/PySide6-6.5.0-cp37-abi3-manylinux_2_28_x86_64.whl
-        sha256: 5102c57841b15facb0aeca1f23d689ebc528a609bf5fb907f1ef2747f6415001
+        url: https://files.pythonhosted.org/packages/cf/9b/923e4bf34c85e04f7b60e89e27e150a08b5e6a2b5950227e3010c6d9d2ba/PySide6-6.8.1-cp39-abi3-manylinux_2_28_x86_64.whl
+        sha256: 7d6adc5d53313249bbe02edb673877c1d437e215d71e88da78412520653f5c9f
       - type: file
-        url: https://files.pythonhosted.org/packages/96/df/28d29fe32fc0f28f95d8b1e209c89f3cbbc7f3b68901368ffbe4f49e38c1/PySide6_Addons-6.5.0-cp37-abi3-manylinux_2_28_x86_64.whl
-        sha256: 29551ca63a1cbc0fcd17fa9e477282857e2c66c3a55fdb9754b75519d5adf89a
+        url: https://files.pythonhosted.org/packages/e4/f6/f3071f51e39e9fbe186aafc1c8d8a0b2a4bd9eb393fee702b73ed3eef5ae/PySide6_Addons-6.8.1-cp39-abi3-manylinux_2_28_x86_64.whl
+        sha256: f80cc03c1ac54132c6f800aa461dced64acd7d1646898db164ccb56fe3c23dd4
       - type: file
-        url: https://files.pythonhosted.org/packages/9d/cd/da6815d1654bf5daf4cd7a0f0dbb316413f29f9ae62d508cebcab4309094/PySide6_Essentials-6.5.0-cp37-abi3-manylinux_2_28_x86_64.whl
-        sha256: f00d4f10758cdc3f49f94465ead788ad294dac7d9cc5e1cc0610e97c2bdfc8d7
+        url: https://files.pythonhosted.org/packages/b1/cc/5af1e0c0306cd75864fba49934977d0a96bec4b293b2244f6f80460c2ff5/PySide6_Essentials-6.8.1-cp39-abi3-manylinux_2_28_x86_64.whl
+        sha256: 2f600b149e65b57acd6a444edb17615adc42cc2491548ae443ccb574036d86b1
       - type: file
-        url: https://files.pythonhosted.org/packages/05/f8/743a0a67ab81665788180689e0eebd32ac521c56ad003386b3de36f41e4e/shiboken6-6.5.0-cp37-abi3-manylinux_2_28_x86_64.whl
-        sha256: 46ff977f96c9d45dba3c3a313628356fd40e4423bb65bf2d9870b73396fad8be
+        url: https://files.pythonhosted.org/packages/58/21/e5af942e6fc5a8c6b973aac8d822415ac54041b6861c3d835be9d217f538/shiboken6-6.8.1-cp39-abi3-manylinux_2_28_x86_64.whl
+        sha256: 1dc4c1976809b0e68872bb98474cccd590455bdcd015f0e0639907e94af27b6a
   - name: python3-xdg
     buildsystem: simple
     build-commands:
@@ -68,23 +68,20 @@ modules:
       - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
         --prefix=${FLATPAK_DEST} "pyexcel" --no-build-isolation
     sources:
-      - type: file
-        url: https://files.pythonhosted.org/packages/74/8f/8fc49109009e8d2169d94d72e6b1f4cd45c13d147ba7d6170fb41f22b08f/chardet-5.1.0-py3-none-any.whl
-        sha256: 362777fb014af596ad31334fde1e8c327dfdb076e1960d1694662d46a6917ab9
       - &id001
         type: file
         url: https://files.pythonhosted.org/packages/10/76/b0967eae4af4b7ea22e8b8ece6f7655fb6a3f4f49428f41910f53a552e1e/lml-0.1.0-py2.py3-none-any.whl
         sha256: ec06e850019942a485639c8c2a26bdb99eae24505bee7492b649df98a0bed101
       - type: file
-        url: https://files.pythonhosted.org/packages/8b/cc/ca982e73be7f817511b11b5c63c8420bf51cb54474d1f3ffab18201c2d3e/pyexcel-0.7.0-py2.py3-none-any.whl
-        sha256: ddc6904512bfa2ecda509fb3b58229bb30db14498632fd9e7a5ba7bbfb02ed1b
+        url: https://files.pythonhosted.org/packages/a9/39/72a95e9327fe27d0597adce3c317d23e45ca899df335313e6ba20464b8fc/pyexcel-0.7.1-py2.py3-none-any.whl
+        sha256: 3306e66e24ef24e34399d329a508d669884a3577a557679c94edda9efc88b834
       - &id002
         type: file
-        url: https://files.pythonhosted.org/packages/4f/e1/68ec0cfd9c2b165eb199e07aaaaacde5a92d4a5fd986560027037c9491a5/pyexcel_io-0.6.6-py2.py3-none-any.whl
-        sha256: 19ff1d599a8a6c0982e4181ef86aa50e1f8d231410fa7e0e204d62e37551c1d6
+        url: https://files.pythonhosted.org/packages/7d/95/44376fb9c5a8200167fc7beac640be3522f85c07297a810865c5ad3fe440/pyexcel_io-0.6.7-py2.py3-none-any.whl
+        sha256: add9f3c1489070ab0a3226bab7d23d4b84a364f5b44f3a14e2ce785ede88fcb3
       - type: file
-        url: https://files.pythonhosted.org/packages/ba/a7/2c12b543f853dae886286b824200eb9d7cd2466e3d14eff1799fbe8223b9/texttable-1.6.7-py2.py3-none-any.whl
-        sha256: b7b68139aa8a6339d2c320ca8b1dc42d13a7831a346b446cb9eb385f0c76310c
+        url: https://files.pythonhosted.org/packages/24/99/4772b8e00a136f3e01236de33b0efda31ee7077203ba5967fcc76da94d65/texttable-1.7.0-py2.py3-none-any.whl
+        sha256: 72227d592c82b3d7f672731ae73e4d1f88cd8e2ef5b075a7a7f01a23a3743917
   - name: python3-pyexcel-odsr
     buildsystem: simple
     build-commands:
@@ -94,8 +91,8 @@ modules:
       - *id001
       - &id003
         type: file
-        url: https://files.pythonhosted.org/packages/89/9c/be3ebeb6053c6625c0497f282e0d8acc36c309212d47201e9cb1198ffb54/lxml-4.9.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl
-        sha256: 1ab8f1f932e8f82355e75dda5413a57612c6ea448069d4fb2e217e9a4bed13d4
+        url: https://files.pythonhosted.org/packages/0a/6e/94537acfb5b8f18235d13186d247bca478fea5e87d224644e0fe907df976/lxml-5.3.0-cp312-cp312-manylinux_2_28_x86_64.whl
+        sha256: 3879cc6ce938ff4eb4900d901ed63555c778731a96365e53fadb36437a131a99
       - *id002
       - type: file
         url: https://files.pythonhosted.org/packages/60/cc/447b38791bec0653b17c9931f8b68617cdc16528c18c53841b606b1686b7/pyexcel_odsr-0.6.0-py2.py3-none-any.whl
@@ -124,12 +121,12 @@ modules:
         --prefix=${FLATPAK_DEST} "pyexcel-xlsx" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/96/c2/3dd434b0108730014f1b96fd286040dc3bcb70066346f7e01ec2ac95865f/et_xmlfile-1.1.0-py3-none-any.whl
-        sha256: a2ba85d1d6a74ef63837eed693bcb89c3f752169b0e3e7ae5b16ca5e1b3deada
+        url: https://files.pythonhosted.org/packages/c1/8b/5fe2cc11fee489817272089c4203e679c63b570a5aaeb18d852ae3cbba6a/et_xmlfile-2.0.0-py3-none-any.whl
+        sha256: 7a91720bc756843502c3b7504c77b8fe44217c85c537d85037f0f536151b2caa
       - *id001
       - type: file
-        url: https://files.pythonhosted.org/packages/6a/94/a59521de836ef0da54aaf50da6c4da8fb4072fb3053fa71f052fd9399e7a/openpyxl-3.1.2-py2.py3-none-any.whl
-        sha256: f91456ead12ab3c6c2e9491cf33ba6d08357d802192379bb482f1033ade496f5
+        url: https://files.pythonhosted.org/packages/c0/da/977ded879c29cbd04de313843e76868e6e13408a94ed6b987245dc7c8506/openpyxl-3.1.5-py2.py3-none-any.whl
+        sha256: 5282c12b107bffeef825f4617dc029afaf41d0ea60823bbb665ef3079dc79de2
       - *id002
       - type: file
         url: https://files.pythonhosted.org/packages/6e/25/80131799ac6ab63c01749bb0d34664ebfd8478e51fbdda0dcef6a3556162/pyexcel_xlsx-0.6.0-py2.py3-none-any.whl
@@ -159,11 +156,11 @@ modules:
         --prefix=${FLATPAK_DEST} "beautifulsoup4" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/57/f4/a69c20ee4f660081a7dedb1ac57f29be9378e04edfcb90c526b923d4bebc/beautifulsoup4-4.12.2-py3-none-any.whl
-        sha256: bd2520ca0d9d7d12694a53d44ac482d181b4ec1888909b035a3dbf40d0f57d4a
+        url: https://files.pythonhosted.org/packages/b1/fe/e8c672695b37eecc5cbf43e1d0638d88d66ba3a44c4d321c796f4e59167f/beautifulsoup4-4.12.3-py3-none-any.whl
+        sha256: b80878c9f40111313e55da8ba20bdba06d8fa3969fc68304167741bbf9e082ed
       - type: file
-        url: https://files.pythonhosted.org/packages/49/37/673d6490efc51ec46d198c75903d99de59baffdd47aea3d071b80a9e4e89/soupsieve-2.4.1-py3-none-any.whl
-        sha256: 1c1bfee6819544a3447586c889157365a27e10d88cde3ad3da0cf0ddf646feb8
+        url: https://files.pythonhosted.org/packages/d1/c2/fe97d779f3ef3b15f05c94a2f1e3d21732574ed441687474db9d342a7315/soupsieve-2.6-py3-none-any.whl
+        sha256: e72c4ff06e4fb6e4b5a9f0f55fe6e81514581fca1515028625d0f299c602ccc9
   - name: python3-minify_html
     buildsystem: simple
     build-commands:
@@ -171,8 +168,8 @@ modules:
         --prefix=${FLATPAK_DEST} "minify_html" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/35/ad/461da8c4a2c83e07956fcd24e825c19cb6bc009272281b5c9765a1ed6295/minify_html-0.10.8-cp310-cp310-manylinux_2_27_x86_64.whl
-        sha256: 282f3439eb0cec40d3f502350a1e31e2c8d4e4d789d10b900f7eb2e84a318c6c
+        url: https://files.pythonhosted.org/packages/a0/ae/786cd6775d8891fe2a4b5774753a00c95fd6ec3013086c92c2970c4371dc/minify_html-0.15.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+        sha256: ea315ad6ac33d7463fac3f313bba8c8d9a55f4811971c203eed931203047e5c8
   - name: python3-lxml
     buildsystem: simple
     build-commands:

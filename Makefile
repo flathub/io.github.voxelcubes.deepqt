@@ -3,7 +3,7 @@
 all: generate-dependencies build bundle install
 
 generate-dependencies:
-	python flatpak-pip-generator-fix --runtime='org.freedesktop.Sdk//22.08' --yaml --output pypi-dependencies --requirements-file='requirements.txt'
+	python flatpak-pip-generator-fix --runtime='org.freedesktop.Sdk//24.08' --yaml --output pypi-dependencies --requirements-file='requirements.txt'
 
 build:
 	flatpak-builder --repo=myrepo --force-clean build-dir io.github.voxelcubes.deepqt.yaml
