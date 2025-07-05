@@ -1,162 +1,165 @@
-# Generated with flatpak-pip-generator --runtime=org.kde.Sdk//6.7 --yaml --output pypi-dependencies --requirements-file=requirements.txt
+# Generated with flatpak-pip-generator --runtime=org.kde.Sdk//6.9 --yaml --output pypi-dependencies --requirements-file=requirements.txt
 build-commands: []
 buildsystem: simple
 modules:
-  - name: python3-deepl
-    buildsystem: simple
-    build-commands:
-      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
-        --prefix=${FLATPAK_DEST} "deepl" --no-build-isolation
-    sources:
-      - type: file
-        url: https://files.pythonhosted.org/packages/a5/32/8f6669fc4798494966bf446c8c4a162e0b5d893dff088afddf76414f70e1/certifi-2024.12.14-py3-none-any.whl
-        sha256: 1275f7a45be9464efc1173084eaa30f866fe2e47d389406136d332ed4967ec56
-      - type: file
-        url: https://files.pythonhosted.org/packages/88/83/489e9504711fa05d8dde1574996408026bdbdbd938f23be67deebb5eca92/charset_normalizer-3.4.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
-        sha256: fd4ec41f914fa74ad1b8304bbc634b3de73d2a0889bd32076342a573e0779e00
-      - type: file
-        url: https://files.pythonhosted.org/packages/f7/24/48054f6808a5586f7195c2c26fef52b598c0ebf37542ee46dd9da72fe9e1/deepl-1.20.0-py3-none-any.whl
-        sha256: 69f93a26d70bff6e2204a71f2e601c4b826cbad1ff6f0e3065cbf5d17a0662d9
-      - type: file
-        url: https://files.pythonhosted.org/packages/76/c6/c88e154df9c4e1a2a66ccf0005a88dfb2650c1dffb6f5ce603dfbd452ce3/idna-3.10-py3-none-any.whl
-        sha256: 946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3
-      - type: file
-        url: https://files.pythonhosted.org/packages/f9/9b/335f9764261e915ed497fcdeb11df5dfd6f7bf257d4a6a2a686d80da4d54/requests-2.32.3-py3-none-any.whl
-        sha256: 70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6
-      - type: file
-        url: https://files.pythonhosted.org/packages/c8/19/4ec628951a74043532ca2cf5d97b7b14863931476d117c471e8e2b1eb39f/urllib3-2.3.0-py3-none-any.whl
-        sha256: 1cee9ad369867bfdbbb48b7dd50374c0967a0bb7710050facf0dd6911440e3df
-  - name: python3-logzero
-    buildsystem: simple
-    build-commands:
-      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
-        --prefix=${FLATPAK_DEST} "logzero" --no-build-isolation
-    sources:
-      - type: file
-        url: https://files.pythonhosted.org/packages/b3/68/aa714515d65090fcbcc9a1f3debd5a644b14aad11e59238f42f00bd4b298/logzero-1.7.0-py2.py3-none-any.whl
-        sha256: 23eb1f717a2736f9ab91ca0d43160fd2c996ad49ae6bad34652d47aba908769d
-  - name: python3-xdg
-    buildsystem: simple
-    build-commands:
-      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
-        --prefix=${FLATPAK_DEST} "xdg" --no-build-isolation
-    sources:
-      - type: file
-        url: https://files.pythonhosted.org/packages/dd/54/3516c1cf349060fc3578686d271eba242f10ec00b4530c2985af9faac49b/xdg-6.0.0-py3-none-any.whl
-        sha256: df3510755b4395157fc04fc3b02467c777f3b3ca383257397f09ab0d4c16f936
-  - name: python3-pyexcel
-    buildsystem: simple
-    build-commands:
-      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
-        --prefix=${FLATPAK_DEST} "pyexcel" --no-build-isolation
-    sources:
-      - &id001
-        type: file
-        url: https://files.pythonhosted.org/packages/10/76/b0967eae4af4b7ea22e8b8ece6f7655fb6a3f4f49428f41910f53a552e1e/lml-0.1.0-py2.py3-none-any.whl
-        sha256: ec06e850019942a485639c8c2a26bdb99eae24505bee7492b649df98a0bed101
-      - type: file
-        url: https://files.pythonhosted.org/packages/a9/39/72a95e9327fe27d0597adce3c317d23e45ca899df335313e6ba20464b8fc/pyexcel-0.7.1-py2.py3-none-any.whl
-        sha256: 3306e66e24ef24e34399d329a508d669884a3577a557679c94edda9efc88b834
-      - &id002
-        type: file
-        url: https://files.pythonhosted.org/packages/7d/95/44376fb9c5a8200167fc7beac640be3522f85c07297a810865c5ad3fe440/pyexcel_io-0.6.7-py2.py3-none-any.whl
-        sha256: add9f3c1489070ab0a3226bab7d23d4b84a364f5b44f3a14e2ce785ede88fcb3
-      - type: file
-        url: https://files.pythonhosted.org/packages/24/99/4772b8e00a136f3e01236de33b0efda31ee7077203ba5967fcc76da94d65/texttable-1.7.0-py2.py3-none-any.whl
-        sha256: 72227d592c82b3d7f672731ae73e4d1f88cd8e2ef5b075a7a7f01a23a3743917
-  - name: python3-pyexcel-odsr
-    buildsystem: simple
-    build-commands:
-      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
-        --prefix=${FLATPAK_DEST} "pyexcel-odsr" --no-build-isolation
-    sources:
-      - *id001
-      - &id003
-        type: file
-        url: https://files.pythonhosted.org/packages/42/07/b29571a58a3a80681722ea8ed0ba569211d9bb8531ad49b5cacf6d409185/lxml-5.3.0-cp311-cp311-manylinux_2_28_x86_64.whl
-        sha256: eec1bb8cdbba2925bedc887bc0609a80e599c75b12d87ae42ac23fd199445654
-      - *id002
-      - type: file
-        url: https://files.pythonhosted.org/packages/60/cc/447b38791bec0653b17c9931f8b68617cdc16528c18c53841b606b1686b7/pyexcel_odsr-0.6.0-py2.py3-none-any.whl
-        sha256: 51650c71838a8026b851dc426f2beaced031b096cc3f30137850407d86c643d3
-  - name: python3-pyexcel-xls
-    buildsystem: simple
-    build-commands:
-      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
-        --prefix=${FLATPAK_DEST} "pyexcel-xls" --no-build-isolation
-    sources:
-      - *id001
-      - *id002
-      - type: file
-        url: https://files.pythonhosted.org/packages/f1/a5/8150710c764803793d908b5aa818a22f085eb672444a75b16ca040fc003b/pyexcel_xls-0.7.0-py2.py3-none-any.whl
-        sha256: 31c6652ddc8758428ed59c7f2c34a1173abb8f3c7ebdba6fce051ff6f78b8135
-      - type: file
-        url: https://files.pythonhosted.org/packages/a6/0c/c2a72d51fe56e08a08acc85d13013558a2d793028ae7385448a6ccdfae64/xlrd-2.0.1-py2.py3-none-any.whl
-        sha256: 6a33ee89877bd9abc1158129f6e94be74e2679636b8a205b43b85206c3f0bbdd
-      - type: file
-        url: https://files.pythonhosted.org/packages/44/48/def306413b25c3d01753603b1a222a011b8621aed27cd7f89cbc27e6b0f4/xlwt-1.3.0-py2.py3-none-any.whl
-        sha256: a082260524678ba48a297d922cc385f58278b8aa68741596a87de01a9c628b2e
-  - name: python3-pyexcel-xlsx
-    buildsystem: simple
-    build-commands:
-      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
-        --prefix=${FLATPAK_DEST} "pyexcel-xlsx" --no-build-isolation
-    sources:
-      - type: file
-        url: https://files.pythonhosted.org/packages/c1/8b/5fe2cc11fee489817272089c4203e679c63b570a5aaeb18d852ae3cbba6a/et_xmlfile-2.0.0-py3-none-any.whl
-        sha256: 7a91720bc756843502c3b7504c77b8fe44217c85c537d85037f0f536151b2caa
-      - *id001
-      - type: file
-        url: https://files.pythonhosted.org/packages/c0/da/977ded879c29cbd04de313843e76868e6e13408a94ed6b987245dc7c8506/openpyxl-3.1.5-py2.py3-none-any.whl
-        sha256: 5282c12b107bffeef825f4617dc029afaf41d0ea60823bbb665ef3079dc79de2
-      - *id002
-      - type: file
-        url: https://files.pythonhosted.org/packages/6e/25/80131799ac6ab63c01749bb0d34664ebfd8478e51fbdda0dcef6a3556162/pyexcel_xlsx-0.6.0-py2.py3-none-any.whl
-        sha256: 16530f96a77c97ebcba7941517d2756ac52d3ce2903d81eecd7f300778d5242a
-  - name: python3-pyexcel-htmlr
-    buildsystem: simple
-    build-commands:
-      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
-        --prefix=${FLATPAK_DEST} "pyexcel-htmlr" --no-build-isolation
-    sources:
-      - type: file
-        url: https://files.pythonhosted.org/packages/6c/dd/a834df6482147d48e225a49515aabc28974ad5a4ca3215c18a882565b028/html5lib-1.1-py2.py3-none-any.whl
-        sha256: 0d78f8fde1c230e99fe37986a60526d7049ed4bf8a9fadbad5f00e22e58e041d
-      - *id001
-      - *id003
-      - type: file
-        url: https://files.pythonhosted.org/packages/4c/92/6113f017e460806552ba64eeafcd7f0829bc70f8d7fd203571712b53c22d/pyexcel_htmlr-0.6.0-py2.py3-none-any.whl
-        sha256: 4514273a10862b9c1949cc0eac945f9fb3cd5a1090ca2b4bd1bf534cdd65c36c
-      - *id002
-      - type: file
-        url: https://files.pythonhosted.org/packages/f4/24/2a3e3df732393fed8b3ebf2ec078f05546de641fe1b667ee316ec1dcf3b7/webencodings-0.5.1-py2.py3-none-any.whl
-        sha256: a0af1213f3c2226497a97e2b3aa01a7e4bee4f403f95be16fc9acd2947514a78
-  - name: python3-beautifulsoup4
-    buildsystem: simple
-    build-commands:
-      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
-        --prefix=${FLATPAK_DEST} "beautifulsoup4" --no-build-isolation
-    sources:
-      - type: file
-        url: https://files.pythonhosted.org/packages/b1/fe/e8c672695b37eecc5cbf43e1d0638d88d66ba3a44c4d321c796f4e59167f/beautifulsoup4-4.12.3-py3-none-any.whl
-        sha256: b80878c9f40111313e55da8ba20bdba06d8fa3969fc68304167741bbf9e082ed
-      - type: file
-        url: https://files.pythonhosted.org/packages/d1/c2/fe97d779f3ef3b15f05c94a2f1e3d21732574ed441687474db9d342a7315/soupsieve-2.6-py3-none-any.whl
-        sha256: e72c4ff06e4fb6e4b5a9f0f55fe6e81514581fca1515028625d0f299c602ccc9
-  - name: python3-minify_html
-    buildsystem: simple
-    build-commands:
-      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
-        --prefix=${FLATPAK_DEST} "minify_html" --no-build-isolation
-    sources:
-      - type: file
-        url: https://files.pythonhosted.org/packages/a0/e2/ed7e62f62a54774c411a0e28ef67a7d1ccb84ab1a933f6b59362c83d78c1/minify_html-0.15.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
-        sha256: d4c4ae3909e2896c865ebaa3a96939191f904dd337a87d7594130f3dfca55510
-  - name: python3-lxml
-    buildsystem: simple
-    build-commands:
-      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
-        --prefix=${FLATPAK_DEST} "lxml" --no-build-isolation
-    sources:
-      - *id003
+- name: python3-deepl
+  buildsystem: simple
+  build-commands:
+  - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
+    --prefix=${FLATPAK_DEST} "deepl" --no-build-isolation
+  sources:
+  - type: file
+    url: https://files.pythonhosted.org/packages/84/ae/320161bd181fc06471eed047ecce67b693fd7515b16d495d8932db763426/certifi-2025.6.15-py3-none-any.whl
+    sha256: 2e0c7ce7cb5d8f8634ca55d2ba7e6ec2689a2fd6537d8dec1296a477a4910057
+  - type: file
+    url: https://files.pythonhosted.org/packages/e4/33/89c2ced2b67d1c2a61c19c6751aa8902d46ce3dacb23600a283619f5a12d/charset_normalizer-3.4.2.tar.gz
+    sha256: 5baececa9ecba31eff645232d59845c07aa030f0c81ee70184a90d35099a0e63
+  - type: file
+    url: https://files.pythonhosted.org/packages/96/90/7e4d85b4d398ac63069553d06ca66b4c3aff376efcfbbb799a413c5b4743/deepl-1.22.0-py3-none-any.whl
+    sha256: df1ed8f4cd4cc6bb9078f3aa0a0b045cd9e3b813a6d3bce4d33b51aa836fddf1
+  - type: file
+    url: https://files.pythonhosted.org/packages/76/c6/c88e154df9c4e1a2a66ccf0005a88dfb2650c1dffb6f5ce603dfbd452ce3/idna-3.10-py3-none-any.whl
+    sha256: 946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3
+  - type: file
+    url: https://files.pythonhosted.org/packages/7c/e4/56027c4a6b4ae70ca9de302488c5ca95ad4a39e190093d6c1a8ace08341b/requests-2.32.4-py3-none-any.whl
+    sha256: 27babd3cda2a6d50b30443204ee89830707d396671944c998b5975b031ac2b2c
+  - type: file
+    url: https://files.pythonhosted.org/packages/a7/c2/fe1e52489ae3122415c51f387e221dd0773709bad6c6cdaa599e8a2c5185/urllib3-2.5.0-py3-none-any.whl
+    sha256: e6b01673c0fa6a13e374b50871808eb3bf7046c4b125b216f6bf1cc604cff0dc
+- name: python3-logzero
+  buildsystem: simple
+  build-commands:
+  - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
+    --prefix=${FLATPAK_DEST} "logzero" --no-build-isolation
+  sources:
+  - type: file
+    url: https://files.pythonhosted.org/packages/b3/68/aa714515d65090fcbcc9a1f3debd5a644b14aad11e59238f42f00bd4b298/logzero-1.7.0-py2.py3-none-any.whl
+    sha256: 23eb1f717a2736f9ab91ca0d43160fd2c996ad49ae6bad34652d47aba908769d
+- name: python3-xdg
+  buildsystem: simple
+  build-commands:
+  - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
+    --prefix=${FLATPAK_DEST} "xdg" --no-build-isolation
+  sources:
+  - type: file
+    url: https://files.pythonhosted.org/packages/dd/54/3516c1cf349060fc3578686d271eba242f10ec00b4530c2985af9faac49b/xdg-6.0.0-py3-none-any.whl
+    sha256: df3510755b4395157fc04fc3b02467c777f3b3ca383257397f09ab0d4c16f936
+- name: python3-pyexcel
+  buildsystem: simple
+  build-commands:
+  - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
+    --prefix=${FLATPAK_DEST} "pyexcel" --no-build-isolation
+  sources:
+  - &id001
+    type: file
+    url: https://files.pythonhosted.org/packages/c8/da/c649f3d09155660bcc5bf4f7fb59effae968e4ffd872cdd738f0b6932400/lml-0.2.0-py2.py3-none-any.whl
+    sha256: 20c80728189e46e8d986f5d0cdf6d83c493471fc25b1c31a8cb3fa96e80b58f8
+  - type: file
+    url: https://files.pythonhosted.org/packages/2f/22/64e8122c170ed40f96f7e1039b9c170062cfab0bce57481bc277e5ddb147/pyexcel-0.7.3-py2.py3-none-any.whl
+    sha256: 394df2445364fa1960fed4a9bb04c62efdff5435026f3d1346f614a94fe5ba7a
+  - &id002
+    type: file
+    url: https://files.pythonhosted.org/packages/7d/95/44376fb9c5a8200167fc7beac640be3522f85c07297a810865c5ad3fe440/pyexcel_io-0.6.7-py2.py3-none-any.whl
+    sha256: add9f3c1489070ab0a3226bab7d23d4b84a364f5b44f3a14e2ce785ede88fcb3
+  - type: file
+    url: https://files.pythonhosted.org/packages/24/99/4772b8e00a136f3e01236de33b0efda31ee7077203ba5967fcc76da94d65/texttable-1.7.0-py2.py3-none-any.whl
+    sha256: 72227d592c82b3d7f672731ae73e4d1f88cd8e2ef5b075a7a7f01a23a3743917
+- name: python3-pyexcel-odsr
+  buildsystem: simple
+  build-commands:
+  - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
+    --prefix=${FLATPAK_DEST} "pyexcel-odsr" --no-build-isolation
+  sources:
+  - *id001
+  - &id003
+    type: file
+    url: https://files.pythonhosted.org/packages/c5/ed/60eb6fa2923602fba988d9ca7c5cdbd7cf25faa795162ed538b527a35411/lxml-6.0.0.tar.gz
+    sha256: 032e65120339d44cdc3efc326c9f660f5f7205f3a535c1fdbf898b29ea01fb72
+  - *id002
+  - type: file
+    url: https://files.pythonhosted.org/packages/60/cc/447b38791bec0653b17c9931f8b68617cdc16528c18c53841b606b1686b7/pyexcel_odsr-0.6.0-py2.py3-none-any.whl
+    sha256: 51650c71838a8026b851dc426f2beaced031b096cc3f30137850407d86c643d3
+- name: python3-pyexcel-xls
+  buildsystem: simple
+  build-commands:
+  - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
+    --prefix=${FLATPAK_DEST} "pyexcel-xls" --no-build-isolation
+  sources:
+  - *id001
+  - *id002
+  - type: file
+    url: https://files.pythonhosted.org/packages/af/41/80495879428132ba6b43c161def10e5a4dc787038d2f476f7547ecca9cc5/pyexcel_xls-0.7.1-py2.py3-none-any.whl
+    sha256: 5fd1bc29a50ad7abf5e5d5b6b0dfa1f83e01a97dbb3e7a9dc8ef118d5b78b46a
+  - type: file
+    url: https://files.pythonhosted.org/packages/1a/62/c8d562e7766786ba6587d09c5a8ba9f718ed3fa8af7f4553e8f91c36f302/xlrd-2.0.2-py2.py3-none-any.whl
+    sha256: ea762c3d29f4cca48d82df517b6d89fbce4db3107f9d78713e48cd321d5c9aa9
+  - type: file
+    url: https://files.pythonhosted.org/packages/44/48/def306413b25c3d01753603b1a222a011b8621aed27cd7f89cbc27e6b0f4/xlwt-1.3.0-py2.py3-none-any.whl
+    sha256: a082260524678ba48a297d922cc385f58278b8aa68741596a87de01a9c628b2e
+- name: python3-pyexcel-xlsx
+  buildsystem: simple
+  build-commands:
+  - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
+    --prefix=${FLATPAK_DEST} "pyexcel-xlsx" --no-build-isolation
+  sources:
+  - type: file
+    url: https://files.pythonhosted.org/packages/c1/8b/5fe2cc11fee489817272089c4203e679c63b570a5aaeb18d852ae3cbba6a/et_xmlfile-2.0.0-py3-none-any.whl
+    sha256: 7a91720bc756843502c3b7504c77b8fe44217c85c537d85037f0f536151b2caa
+  - *id001
+  - type: file
+    url: https://files.pythonhosted.org/packages/c0/da/977ded879c29cbd04de313843e76868e6e13408a94ed6b987245dc7c8506/openpyxl-3.1.5-py2.py3-none-any.whl
+    sha256: 5282c12b107bffeef825f4617dc029afaf41d0ea60823bbb665ef3079dc79de2
+  - *id002
+  - type: file
+    url: https://files.pythonhosted.org/packages/13/c6/d4f75ee10e7a9eee804c301bc369918bb33bbbeec17ddcd4d0225543ea83/pyexcel_xlsx-0.6.1-py2.py3-none-any.whl
+    sha256: c17d8c90ae6c2ae5672e469e6afe4336597e4ff479e5a93ba846ae46b7b80769
+- name: python3-pyexcel-htmlr
+  buildsystem: simple
+  build-commands:
+  - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
+    --prefix=${FLATPAK_DEST} "pyexcel-htmlr" --no-build-isolation
+  sources:
+  - type: file
+    url: https://files.pythonhosted.org/packages/6c/dd/a834df6482147d48e225a49515aabc28974ad5a4ca3215c18a882565b028/html5lib-1.1-py2.py3-none-any.whl
+    sha256: 0d78f8fde1c230e99fe37986a60526d7049ed4bf8a9fadbad5f00e22e58e041d
+  - *id001
+  - *id003
+  - type: file
+    url: https://files.pythonhosted.org/packages/4c/92/6113f017e460806552ba64eeafcd7f0829bc70f8d7fd203571712b53c22d/pyexcel_htmlr-0.6.0-py2.py3-none-any.whl
+    sha256: 4514273a10862b9c1949cc0eac945f9fb3cd5a1090ca2b4bd1bf534cdd65c36c
+  - *id002
+  - type: file
+    url: https://files.pythonhosted.org/packages/f4/24/2a3e3df732393fed8b3ebf2ec078f05546de641fe1b667ee316ec1dcf3b7/webencodings-0.5.1-py2.py3-none-any.whl
+    sha256: a0af1213f3c2226497a97e2b3aa01a7e4bee4f403f95be16fc9acd2947514a78
+- name: python3-beautifulsoup4
+  buildsystem: simple
+  build-commands:
+  - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
+    --prefix=${FLATPAK_DEST} "beautifulsoup4" --no-build-isolation
+  sources:
+  - type: file
+    url: https://files.pythonhosted.org/packages/50/cd/30110dc0ffcf3b131156077b90e9f60ed75711223f306da4db08eff8403b/beautifulsoup4-4.13.4-py3-none-any.whl
+    sha256: 9bbbb14bfde9d79f38b8cd5f8c7c85f4b8f2523190ebed90e950a8dea4cb1c4b
+  - type: file
+    url: https://files.pythonhosted.org/packages/e7/9c/0e6afc12c269578be5c0c1c9f4b49a8d32770a080260c333ac04cc1c832d/soupsieve-2.7-py3-none-any.whl
+    sha256: 6e60cc5c1ffaf1cebcc12e8188320b72071e922c2e897f737cadce79ad5d30c4
+  - type: file
+    url: https://files.pythonhosted.org/packages/b5/00/d631e67a838026495268c2f6884f3711a15a9a2a96cd244fdaea53b823fb/typing_extensions-4.14.1-py3-none-any.whl
+    sha256: d1e1e3b58374dc93031d6eda2420a48ea44a36c2b4766a4fdeb3710755731d76
+- name: python3-minify_html
+  buildsystem: simple
+  build-commands:
+  - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
+    --prefix=${FLATPAK_DEST} "minify_html" --no-build-isolation
+  sources:
+  - type: file
+    url: https://files.pythonhosted.org/packages/69/96/06987da1547c8fe76a8a12e915ac02e3a021a3533ee0fb5bf713ca13a11c/minify_html-0.16.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+    sha256: 630d117cac42ef4f8816b0d1ada77936b1008e59054cecd039aa78eece8a7964
+- name: python3-lxml
+  buildsystem: simple
+  build-commands:
+  - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
+    --prefix=${FLATPAK_DEST} "lxml" --no-build-isolation
+  sources:
+  - *id003
 name: pypi-dependencies

@@ -6,7 +6,7 @@ ID := io.github.voxelcubes.deepqt
 
 
 generate-dependencies:
-	python flatpak-pip-generator-fix --runtime='org.kde.Sdk//6.7' --yaml --output pypi-dependencies --requirements-file='requirements.txt'
+	python flatpak-builder-tools/pip/flatpak-pip-generator --runtime='org.kde.Sdk//6.9' --yaml --output pypi-dependencies --requirements-file='requirements.txt'
 
 build-install:
 	flatpak run org.flatpak.Builder --force-clean --sandbox --user --install --install-deps-from=flathub --ccache --mirror-screenshots-url=https://dl.flathub.org/repo/screenshots --repo=repo builddir $(ID).yaml

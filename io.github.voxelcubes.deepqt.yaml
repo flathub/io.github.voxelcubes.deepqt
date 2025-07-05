@@ -1,10 +1,16 @@
 app-id: io.github.voxelcubes.deepqt
 runtime: org.kde.Platform
-runtime-version: '6.7'
+runtime-version: '6.9'
 sdk: org.kde.Sdk
 base: io.qt.PySide.BaseApp
-base-version: 6.7
+base-version: '6.9'
 command: deepqt
+build-options:
+  env:
+    - BASEAPP_REMOVE_WEBENGINE=1
+    - BASEAPP_DISABLE_NUMPY=1
+cleanup-commands:
+  - /app/cleanup-BaseApp.sh
 finish-args:
   - --share=ipc
   - --socket=fallback-x11
@@ -31,5 +37,3 @@ modules:
       - install -Dm644 media/deepqt.png /app/share/icons/hicolor/256x256/apps/io.github.voxelcubes.deepqt.png
       - install -Dm644 flatpak/io.github.voxelcubes.deepqt.appdata.xml /app/share/metainfo/io.github.voxelcubes.deepqt.appdata.xml
       - desktop-file-edit --set-key="Icon" --set-value=${FLATPAK_ID} /app/share/applications/${FLATPAK_ID}.desktop
-cleanup-commands:
-  - /app/cleanup-BaseApp.sh
