@@ -1,4 +1,4 @@
-# Generated with flatpak-pip-generator --runtime=org.kde.Sdk//6.10 --yaml --output pypi-dependencies --requirements-file=requirements.txt --prefer-wheels=minify_html
+# Generated with flatpak-pip-generator --runtime=org.kde.Sdk//6.10 --yaml --output pypi-dependencies --requirements-file=requirements.txt --prefer-wheels=minify_html --wheel-arches=x86_64
 name: pypi-dependencies
 buildsystem: simple
 build-commands: []
@@ -142,8 +142,8 @@ modules:
         --prefix=${FLATPAK_DEST} "beautifulsoup4" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/1a/39/47f9197bdd44df24d67ac8893641e16f386c984a0619ef2ee4c51fbbc019/beautifulsoup4-4.14.3-py3-none-any.whl
-        sha256: 0918bfe44902e6ad8d57732ba310582e98da931428d231a5ecb9e7c703a735bb
+        url: https://files.pythonhosted.org/packages/88/c6/92fcd42f1ba33e1184263f25bfabf3d27c383410470f169e4b8163bf9c17/beautifulsoup4-4.15.0-py3-none-any.whl
+        sha256: d6f88de62e1d4e38ecb1077eb9724cd0eff29d2a08ca16a401e9b9e93f117cf9
       - type: file
         url: https://files.pythonhosted.org/packages/5e/f5/0c41cb68dcae6b7de4fac4188a3a9589e21fb31df21ea3a2e888db95e6c9/soupsieve-2.8.4-py3-none-any.whl
         sha256: e7e6b0769c8f51ed59acab6e994b00621096cfb1c640a7509295987388fbaf65
@@ -161,11 +161,6 @@ modules:
         sha256: c952a8f9e5a6403611b338b75bbf9469cf4ce04f15426a9ef9da87456fd55bd6
         only-arches:
           - x86_64
-      - type: file
-        url: https://files.pythonhosted.org/packages/2f/59/5aa912eee1860895a016dc2e93fe8522fcf10590f12dc6a50c790b3997ed/minify_html-0.18.1-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
-        sha256: 00f407d32f3f8369901f0e6c92610f351f69dacf4ed594d373924f54fbf01ded
-        only-arches:
-          - aarch64
   - name: python3-lxml
     buildsystem: simple
     build-commands:
