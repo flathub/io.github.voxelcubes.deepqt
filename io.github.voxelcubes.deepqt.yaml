@@ -1,10 +1,12 @@
 app-id: io.github.voxelcubes.deepqt
 runtime: org.kde.Platform
-runtime-version: '6.9'
+runtime-version: '6.10'
 sdk: org.kde.Sdk
 base: io.qt.PySide.BaseApp
-base-version: '6.9'
+base-version: '6.10'
 command: deepqt
+rename-desktop-file: DeepQt.desktop
+rename-icon: deepqt
 build-options:
   env:
     - BASEAPP_REMOVE_WEBENGINE=1
@@ -24,16 +26,15 @@ modules:
     buildsystem: simple
     build-commands:
       - pip3 install --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST} deepqt
+    post-install:
+      - install -Dm644 DeepQt.desktop -t /app/share/applications/
+      - install -Dm644 media/deepqt.png -t /app/share/icons/hicolor/256x256/apps/
+      - install -Dm644 flatpak/io.github.voxelcubes.deepqt.appdata.xml -t /app/share/metainfo/
     sources:
       - type: file
         url: https://files.pythonhosted.org/packages/c8/e2/5565e3a200efaa6c58d5d40c29f4ea854289c11dca99d286d91ae1031ab1/deepqt-1.1.7-py3-none-any.whl
         sha256: 37a1821f037dbf887e4609c77725137abebac838dd399377d1f0243c73d538f8
       - type: git
         url: https://github.com/VoxelCubes/DeepQt.git
-        commit: ed8a1c51e451f18efab1276bfb0461d176ebac06
         tag: v1.1.7
-    post-install:
-      - install -Dm644 DeepQt.desktop /app/share/applications/io.github.voxelcubes.deepqt.desktop
-      - install -Dm644 media/deepqt.png /app/share/icons/hicolor/256x256/apps/io.github.voxelcubes.deepqt.png
-      - install -Dm644 flatpak/io.github.voxelcubes.deepqt.appdata.xml /app/share/metainfo/io.github.voxelcubes.deepqt.appdata.xml
-      - desktop-file-edit --set-key="Icon" --set-value=${FLATPAK_ID} /app/share/applications/${FLATPAK_ID}.desktop
+        commit: ed8a1c51e451f18efab1276bfb0461d176ebac06
